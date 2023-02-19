@@ -160,7 +160,7 @@ aside img {
 
 #nav_menu {
     text-shadow: none;
-    margin: 5px 25% auto;
+    margin: 1em 25% auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -216,8 +216,12 @@ aside img {
 	display: block;
 	clear: both;
 }
+#mobile_menu {
+    display: none;
+}
+
 /*navbar touches border at 1172px*/
-@media only screen and (width <= 1172px) {
+@media only screen and (width <= 1400px) {
     #mobile_menu {
         display: block;
     }
