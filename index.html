@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 <html>
 <!--
------ Module Assignment 6 -----
-Add the following features to your website::
-- Either a horizontal or vertical navigation menu
-- At least 3 HTML pages that you can navigate between using the navigation menu
-- - Hint: this means there should be a navigation menu on each page!
-- - My expectation is that your navigation menu will be consistent across all pages of your website, since this is commonplace on websites today
-- - You're welcome to have some navigation links that don't function yet, for web pages you plan to develop in the future
-- One page of your website should use a 2- or 3-column layout (see Ch 6)
-- - Have writer's block? Consider asking ChatGPT to write you the text for an article about a topic related to your website.
-- One link that opens a different website in a different browser tab or browser window (see pg. 228)
-- One link that links to a placeholder on the same page (see pg. 230)
+----- Module Assignment 7 -----
+- A fluid layout (as opposed to a fixed layout) with at least one scalable image (see pg. 256-271)
+- A media query that fixes the layout issues posed by at least one breakpoint (see pg. 272-279)
+- At least one flex container for a component like a navigation menu or for a simple page layout. (see Ch 9)
 - Don't forget to put a few comments in both your HTML and CSS code that explain the purpose of the code
-
-Note: you don't have to keep anything in your website that were requirements from previous iterations of the "Create Your Own Website" assignment.
-For example, you don't have to keep any CSS styles that you coded for the previous assignment.
-They are not part of your grade anymore, so you can make any changes to the CSS you need to for this iteration of your website.
-Feel free to change any aspects of your project to meet the requirements for this particular assignment.
 
 -->
 
@@ -27,13 +15,19 @@ Feel free to change any aspects of your project to meet the requirements for thi
         content="Randall's Hobbies Part 6. This is a quick rundown on how to find the key of a song just by looking at a musical staff.">
     <title>Randall's Hobbies Part 6!</title>
     <link rel="icon" href="Media/Pictures/coughing_cat.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+    <script
+        type="text/javascript"> $(document).ready(function () { $('#nav_menu').slicknav({ prependTo: "#mobile_menu" }); });</script>
     <link rel="stylesheet" href="Style/style.css">
 </head>
+
 <body>
     <header>
         <h1>Welcome to the musical side of things!</h1>
     </header>
-
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
             <li><a class="current" href="#">Home</a></li>
@@ -55,7 +49,8 @@ Feel free to change any aspects of your project to meet the requirements for thi
             <li><a href="nav_menu/YouTube_Channels.html">Channels</a>
                 <ul>
                     <li><a href="https://www.youtube.com/@AdamNeely" target="_blank">Adam Neely</a></li>
-                    <li><a href="https://www.youtube.com/@CharlesCornellStudios" target="_blank">Charles Cornell</a></li>
+                    <li><a href="https://www.youtube.com/@CharlesCornellStudios" target="_blank">Charles Cornell</a>
+                    </li>
                     <li><a href="https://www.youtube.com/@andrewhuang" target="_blank">Andrew Huang</a></li>
                 </ul>
             </li>
@@ -93,7 +88,8 @@ Feel free to change any aspects of your project to meet the requirements for thi
             (minor).
         </p>
         <p>
-            An example of a song in Gm is Ballad of the Catboi (provided in the Midi Files section). Please give it a listen!
+            An example of a song in Gm is Ballad of the Catboi (provided in the Midi Files section). Please give it a
+            listen!
         </p>
     </main>
 </body>
