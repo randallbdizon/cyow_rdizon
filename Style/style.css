@@ -250,6 +250,7 @@ aside img {
     section, aside {
         float: none;
         flex-direction: column;
+        width: 100%;
     }
 
     section {
