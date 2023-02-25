@@ -288,6 +288,8 @@ main div img {
     font-style: normal;
     border: solid 1px rgb(0, 27, 73);
     color: rgb(233, 233, 233);
+    background-color: rgb(233, 233, 233);
+    text-shadow: none;
 }
 
 .hidden:hover {
