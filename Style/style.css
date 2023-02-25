@@ -22,7 +22,7 @@ body {
 }
 
 body h1 {
-    font-size: 200%;
+    font-size: 175%;
     margin: 0px auto;
     padding: 5px;
     width: fit-content;
@@ -76,21 +76,18 @@ a:hover, a:focus {
     text-shadow: 1px 1px 2px rgb(231, 240, 255), 0 0 25px rgb(78, 29, 0), 0 0 5px rgb(231, 240, 255);
 }
 
-
-
 img {
     background-image: linear-gradient(-45deg, rgb(231, 240, 255)25%, rgb(0, 29, 78)75%);
     border-style: outset;
     border-width: 5px;
     max-width: 100%;
-
 }
 
 .sidenote {
     font-size: 67%;
 }
-/* Footer section */
 
+/* Footer section */
 footer {
 	background-color: rgb(0, 29, 78);
     color: white;
@@ -158,18 +155,17 @@ aside img {
 }
 
 
-/* Navigation Menu stuff */
-
+/*vvvv Navigation Menu stuff vvvv*/
 #nav_menu {
     text-shadow: none;
     margin: 1em 15% 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-evenly;
+    text-align: center;
 }
 
 #nav_menu ul {
-	margin: 0;
+    margin: 0px;
 	padding: 0px;
 	list-style: none;
 	position: relative;
@@ -183,7 +179,15 @@ aside img {
     flex-basis: 100%;
     display: block;
 }
+
+#nav_menu ul li ul li {
+    border: 1px solid white;
+    width: 210px;
+    background-color:rgb(0, 27, 73)
+}
+
 #nav_menu ul li a{
+    width: max-content;
 	text-align: center;
 	display: block;
 	padding: .5em;
@@ -204,10 +208,6 @@ aside img {
 	display: none;
 }
 
-/*#nav_menu ul ul li {
-	float: none;
-}*/
-
 #nav_menu ul li:hover > ul {
 	display: block;
     width: 25%;
@@ -220,13 +220,13 @@ aside img {
 	display: block;
 	clear: both;
 }
+/*^^^^ Navigation Menu stuff ^^^^*/
+
+
 #mobile_menu {
     display: none;
 }
 
-
-
-/*navbar touches border at 1172px*/
 @media only screen and (width <= 1200px) {
     #mobile_menu {
         display: block;
@@ -234,17 +234,13 @@ aside img {
     #nav_menu {
         display: none;
     }
-}
 
-/*@media only screen and (width <= 1330px) {
-    main {
-        flex-direction: column;
+    .slicknav_menu {
+        text-shadow: none;
+        margin: 1em 15% 0;
+		background-color: rgb(0, 27, 73) !important;
     }
-    
-    #nav_menu ul {
-        flex-direction: column;
-    }
-}*/
+}
 
 @media only screen and (width <= 600px) {
     section, aside {
@@ -262,3 +258,40 @@ aside img {
     }
 }
 
+/*vvvv Grid section for Practice Page vvvv*/
+#griddle {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-gap: 20px;
+    background-color: rgb(233, 233, 233);
+    text-shadow: none;
+    border: solid 2px rgb(0, 27, 73);
+    padding: 5px 30px 5px 5px;
+    text-align: center;
+}
+
+@media only screen and (width <= 660px) {
+    #griddle {
+        display: flex;
+        flex-direction: column;
+        float: none;
+    }
+}
+
+main div img {
+    
+    margin: 5px;
+    float: none;
+}
+
+.hidden {
+    font-style: normal;
+    border: solid 1px rgb(0, 27, 73);
+    color: rgb(233, 233, 233);
+}
+
+.hidden:hover {
+    color:rgb(0, 27, 73);
+}
+
+/*^^^^ Grid section for Practice Page ^^^^*/

@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html>
-<!--
------ Module Assignment 7 -----
-- A fluid layout (as opposed to a fixed layout) with at least one scalable image (see pg. 256-271)
-- A media query that fixes the layout issues posed by at least one breakpoint (see pg. 272-279)
-- At least one flex container for a component like a navigation menu or for a simple page layout. (see Ch 9)
-- Don't forget to put a few comments in both your HTML and CSS code that explain the purpose of the code
-
--->
 
 <head>
     <meta charset="UTF-8">
     <meta name="description"
-        content="Randall's Hobbies Part 7. This is a quick rundown on how to find the key of a song just by looking at a musical staff.">
-    <title>Randall's Hobbies Part 7!</title>
+        content="Randall's Hobbies Part 8. This is a quick rundown on how to find the key of a song just by looking at a musical staff.">
+    <title>Randall's Hobbies Part 8!</title>
     <link rel="icon" href="Media/Pictures/coughing_cat.png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" />
@@ -25,25 +17,25 @@
 
 <body>
     <header>
-        <h1>Welcome to the musical side of things!</h1>
+        <h1>Welcome to the Musical Side of Things!</h1>
     </header>
     <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
             <li><a class="current" href="#">Home</a></li>
-            <li><a href="nav_menu/examples.html">Examples</a>
-                <ul>
-                    <li><a href="https://www.youtube.com/watch?v=3GPaRM-jV2s" target="_blank">The Longest Fall</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=dU59_UTGoys" target="_blank">To Zanarkand</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=T_v6UtLaKdU" target="_blank">Memories of Life</a></li>
-                </ul>
-            </li>
-            <li><a href="nav_menu/references.html">References</a></li>
+            <li><a href="nav_menu/practice.html">Practice</a></li>
             <li><a href="nav_menu/midi_files.html">Midi Files</a>
                 <ul>
                     <li><a href="https://github.com/randallbdizon/DaruMidiRepository">Repository</a></li>
                     <li><a href="https://www.anvilstudio.com/">Anvil Studio</a></li>
                     <li><a href="https://bardmusicplayer.com/">Bard Music Player</a></li>
+                </ul>
+            </li>
+            <li><a href="nav_menu/examples.html">Examples</a>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=3GPaRM-jV2s" target="_blank">The Longest Fall</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dU59_UTGoys" target="_blank">To Zanarkand</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=T_v6UtLaKdU" target="_blank">Memories of Life</a></li>
                 </ul>
             </li>
             <li><a href="nav_menu/YouTube_Channels.html">Channels</a>
@@ -66,11 +58,11 @@
         <p>
             First, take a look at the staff and see how many sharps (#) or flats (b) there are.
         </p>
-        <img src="Media/Pictures/Staffs.jpg" alt="Musical Staff with two flats">
+        <center><img src="Media/Pictures/Staffs.jpg" alt="Musical Staff with two flats"></center>
         <br>
         <br>
         <p>
-            Next, pull up an image of the "<em class="shadow">Circle of Fifths</em>" on Google images
+            Next, pull up an image of the "<em class="shadow">Circle of Fifths</em>" on Google images.
         </p>
         <p>As you can see here, a song with 2 flats is either in the key of Bb Major or G Minor.
         </p>
@@ -81,7 +73,7 @@
         <p class="sidenote">
             (In the case above, Bb = B-flat major and Gm = G minor.)
         </p>
-        <img src="Media/Pictures/circle_of_fifths_colors_2flats.png" alt="Circle of fifths with two flats">
+        <center><img src="Media/Pictures/circle_of_fifths_colors_2flats.png" alt="Circle of fifths with two flats"></center>
         <br>
         <p>
             Then, the final thing to do is listen to the song and determine whether it sounds "happy" (major) or "sad"
@@ -91,6 +83,8 @@
             An example of a song in Gm is Ballad of the Catboi (provided in the Midi Files section). Please give it a
             listen!
         </p>
+        <br>
+        <p>If you would like to practice, I do have a few more examples for you to try out in the "Practice" tab.</p>
     </main>
 </body>
 
