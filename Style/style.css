@@ -110,7 +110,7 @@ section h1 {
 	margin: 0;
 }
 section h2 {
-	color: #800000;
+	color: rgb(0, 27, 73);
 	font-size: 130%;
 	padding: .5em 0 .25em 0;
 }
@@ -141,7 +141,7 @@ aside {
     position: relative;
 }
 aside h2 {
-	color: #800000;
+	color: rgb(0, 27, 73);
 	font-size: 130%;
 	padding: .5em 0 .25em 0;
 }
@@ -292,7 +292,7 @@ main div img {
     text-shadow: none;
 }
 
-.hidden:hover {
+.hidden:hover, .hidden:focus {
     color:rgb(0, 27, 73);
 }
 
