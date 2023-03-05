@@ -6,8 +6,8 @@
 body {
     margin: 2% 25% auto;
     position: absolute;
-    font-family: Calibri, Arial, Sans-serif;
-    font-size: 24px;
+    font-family: Raleway, Calibri, Arial, Sans-serif;
+    font-size: 20px;
     color: rgb(0, 27, 73);
     text-shadow: .5px -.5px 0px rgb(231, 240, 255), -.5px .5px 0px rgb(231, 240, 255), .5px .5px 0px rgb(231, 240, 255), -.5px -.5px 0px rgb(231, 240, 255);
     background-image: url("../Media/Pictures/trebleclef_bottomleft.jpg");
