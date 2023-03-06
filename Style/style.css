@@ -73,6 +73,11 @@ img {
     max-width: 100%;
 }
 
+figcaption {
+    text-align: center;
+    font-size: 67%;
+}
+
 /*vvvv Class stuff vvvv*/
 .shadow {
     color: rgb(231, 240, 255);
@@ -87,6 +92,7 @@ img {
 .sidenote {
     font-size: 67%;
 }
+
 
 .hidden {
     font-style: normal;
