@@ -1,0 +1,18 @@
+Hey Randall,
+
+Very nice start to your website. I like how the theme and layout stay consistent throughout your site. I enjoyed the creativity of having a practice page with working hover styling so people can learn how to read music, "I have no idea how, lol." Also, all of the external links are a charming touch to aid people in learning more about music theory.
+
+One improvement I could think of is to add a "return to top" placeholder on each page where you have to scroll down so people can quickly return to the navigation menu. Another idea is to center the copyright in the footer so it will look nicer. And this is my preference, but I would tweak the spacing between certain elements, so they aren't as close to each other, but that is only aesthetic. 
+
+Keep up the great work,
+
+- Mike Wittig
+
+===================================================================================
+
+Randall, Dude, your webpage was awesome. My favorite part of the website is the hover property you put on the answer to your questions. I thought that was very clever. Also the amount of just sheer information provided on your website was good. It was a very pleasing to look at website. I had difficulty coming up with critiques for you but one would be that you placed a link to a website that doesn't work but you knew that already as you said in your webpage. I'll probably get a lower grade for not providing another critique but your webpage seriously blew mine out of the water! Good work.
+- Daniel Lindquist
+
+===================================================================================
+
+As per Mike's request, I added a "return to top" button thing of sorts and added a bit more spacing between elements for better readability. Since Daniel didn't really have specific suggestions, I just picked around at something I'd love to add into my website. The one thing I wanted to figure out is how to make it mobile-friendly, so I adjusted my media queries so that my section and aside sections turn into a column sooner. I've also updated the Midi Files page to incorporate a table, as well as a download icon from fontawesome.com. The font I used from Google Fonts was Raleway. I just like how sleek it looks. The other thing I've done is get rid of the Circle of Fifths image from the Practice page, because if someone looking through my webpage is like me and is a kinesthetic learner, I am forcing them to Google search an image of the Circle of Fifths. That way, they have that muscle memory of actually looking it up. Or, they just look at the Home page and use that. Ha ha!

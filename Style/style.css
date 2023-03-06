@@ -48,7 +48,7 @@ br {
 }
 
 li {
-    margin-left: 100px;
+    margin: 0 50px;
     text-align: left;
 }
 
@@ -66,6 +66,14 @@ a:hover, a:focus {
     color:rgb(234, 0, 255);
 }
 
+img {
+    background-image: linear-gradient(-45deg, rgb(231, 240, 255)25%, rgb(0, 29, 78)75%);
+    border-style: outset;
+    border-width: 5px;
+    max-width: 100%;
+}
+
+/*vvvv Class stuff vvvv*/
 .shadow {
     color: rgb(231, 240, 255);
     text-shadow: 1px 1px 2px rgb(0, 29, 78), 0 0 25px rgb(0, 204, 255), 0 0 5px rgb(0, 27, 73);
@@ -76,18 +84,28 @@ a:hover, a:focus {
     text-shadow: 1px 1px 2px rgb(231, 240, 255), 0 0 25px rgb(78, 29, 0), 0 0 5px rgb(231, 240, 255);
 }
 
-img {
-    background-image: linear-gradient(-45deg, rgb(231, 240, 255)25%, rgb(0, 29, 78)75%);
-    border-style: outset;
-    border-width: 5px;
-    max-width: 100%;
-}
-
 .sidenote {
     font-size: 67%;
 }
 
-/* Footer section */
+.hidden {
+    font-style: normal;
+    border: solid 1px rgb(0, 27, 73);
+    color: rgb(233, 233, 233);
+    background-color: rgb(233, 233, 233);
+    text-shadow: none;
+}
+
+.hidden:hover, .hidden:focus {
+    color:rgb(0, 27, 73);
+}
+
+.center {
+    text-align: center;
+}
+/*^^^^ Class stuff ^^^^*/
+
+/*vvvv Footer stuff vvvv*/
 footer {
 	background-color: rgb(0, 29, 78);
     color: white;
@@ -98,8 +116,9 @@ footer {
     right: 0px;
     font-size: small;
 }
+/*^^^^ Footer stuff ^^^^*/
 
-/* the styles for the section */
+/*vvvv Section stuff vvvv*/
 section {
     width: 48%;
 	float: left;
@@ -132,9 +151,9 @@ section li {
 section img {
     max-width: 100%;
 }
+/*^^^^ Section stuff ^^^^*/
 
-
-/* the styles for the aside */
+/*vvvv Aside stuff vvvv*/
 aside {
 	width: 48%;
 	float: right;
@@ -153,7 +172,7 @@ aside h3 {
 aside img {
     max-width: 100%;
 }
-
+/*^^^^ Aside stuff ^^^^*/
 
 /*vvvv Navigation Menu stuff vvvv*/
 #nav_menu {
@@ -222,7 +241,7 @@ aside img {
 }
 /*^^^^ Navigation Menu stuff ^^^^*/
 
-
+/*vvvv Media Query stuff vvvv*/
 #mobile_menu {
     display: none;
 }
@@ -262,29 +281,17 @@ aside img {
     }
 }
 
-/*@media only screen and (width <= 800px) {
-    section, aside {
-        float: none;
+@media only screen and (width <= 660px) {
+    #griddle {
+        display: flex;
         flex-direction: column;
-        width: 100%;
+        float: none;
     }
+}
+/*^^^^ Media Query stuff ^^^^*/
 
-    body {
-        margin-left: 0px;
-        margin-right: 0px;
-        width: 95.5%;
-    }
 
-    section {
-        order: 1;
-    }
-
-    aside {
-        order: 2;
-    }
-}*/
-
-/*vvvv Grid section for Practice Page vvvv*/
+/*vvvv Grid stuff vvvv*/
 #griddle {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
@@ -296,30 +303,34 @@ aside img {
     text-align: center;
 }
 
-@media only screen and (width <= 660px) {
-    #griddle {
-        display: flex;
-        flex-direction: column;
-        float: none;
-    }
-}
-
-main div img {
-    
+main div img {    
     margin: 5px;
     float: none;
 }
+/*^^^^ Grid stuff ^^^^*/
 
-.hidden {
-    font-style: normal;
-    border: solid 1px rgb(0, 27, 73);
-    color: rgb(233, 233, 233);
-    background-color: rgb(233, 233, 233);
+/*vvvv Table stuff vvvv*/
+table {
+    border-collapse: collapse;
+    display: flex;
+    justify-content:space-evenly;
+    width: ;
+}
+
+th, td {
+    border: 1px solid rgb(0, 27, 73);
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    color: rgb(231, 240, 255);
     text-shadow: none;
+    background-color: rgb(0, 27, 73);
+    text-align: center;
 }
 
-.hidden:hover, .hidden:focus {
-    color:rgb(0, 27, 73);
+td {
+    text-align: left;
 }
-
-/*^^^^ Grid section for Practice Page ^^^^*/
+/*^^^^ Table stuff ^^^^*/
