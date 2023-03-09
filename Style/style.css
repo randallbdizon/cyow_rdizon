@@ -109,6 +109,17 @@ figcaption {
 .center {
     text-align: center;
 }
+
+.creators{
+    padding 5px;
+    text-align: left;    
+    font-size: 75%;
+}
+
+div.creators img {
+    border: none;
+    background-image: none;
+}
 /*^^^^ Class stuff ^^^^*/
 
 /*vvvv Footer stuff vvvv*/
@@ -247,12 +258,66 @@ aside img {
 }
 /*^^^^ Navigation Menu stuff ^^^^*/
 
+/*vvvv Grid stuff vvvv*/
+#griddle {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-gap: 20px;
+    background-color: rgb(233, 233, 233, 80%);
+    text-shadow: none;
+    border: solid 2px rgb(0, 27, 73);
+    padding: 5px 30px 5px 5px;
+    text-align: center;
+}
+
+#griddle_creators {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 20px;
+    background-color: none;
+    text-shadow: none;
+    border: none;
+    padding: 5px;
+    text-align: center;
+}
+
+main div img {    
+    margin: 5px;
+    float: none;
+}
+/*^^^^ Grid stuff ^^^^*/
+
+/*vvvv Table stuff vvvv*/
+table {
+    border-collapse: collapse;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+th, td {
+    border: 1px solid rgb(0, 27, 73);
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    color: rgb(231, 240, 255);
+    text-shadow: none;
+    background-color: rgb(0, 27, 73);
+    text-align: center;
+}
+
+td {
+    text-align: left;
+}
+/*^^^^ Table stuff ^^^^*/
+
 /*vvvv Media Query stuff vvvv*/
 #mobile_menu {
     display: none;
 }
 
-@media only screen and (width <= 969px) {
+@media only screen and (width <= 990px) {
     #mobile_menu {
         display: block;
     }
@@ -265,7 +330,19 @@ aside img {
         margin: 1em 15% 0;
 		background-color: rgb(0, 27, 73) !important;
     }
-    
+
+    body{
+        background-size: cover;
+    }
+
+    #griddle_creators {
+        display: flex;
+        flex-direction: column;
+        float: none;
+    }
+}
+
+@media only screen and (width <= 800px) {
     section, aside {
         float: none;
         flex-direction: column;
@@ -293,50 +370,7 @@ aside img {
         flex-direction: column;
         float: none;
     }
+
+    
 }
 /*^^^^ Media Query stuff ^^^^*/
-
-
-/*vvvv Grid stuff vvvv*/
-#griddle {
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-    grid-gap: 20px;
-    background-color: rgb(233, 233, 233);
-    text-shadow: none;
-    border: solid 2px rgb(0, 27, 73);
-    padding: 5px 30px 5px 5px;
-    text-align: center;
-}
-
-main div img {    
-    margin: 5px;
-    float: none;
-}
-/*^^^^ Grid stuff ^^^^*/
-
-/*vvvv Table stuff vvvv*/
-table {
-    border-collapse: collapse;
-    display: flex;
-    justify-content:space-evenly;
-    width: ;
-}
-
-th, td {
-    border: 1px solid rgb(0, 27, 73);
-    border-collapse: collapse;
-    padding: 5px;
-}
-
-th {
-    color: rgb(231, 240, 255);
-    text-shadow: none;
-    background-color: rgb(0, 27, 73);
-    text-align: center;
-}
-
-td {
-    text-align: left;
-}
-/*^^^^ Table stuff ^^^^*/
